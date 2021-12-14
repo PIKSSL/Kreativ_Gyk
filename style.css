@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+}
+
+main{
+    display: grid;
+    
+    grid-template-areas: "he he he he"
+                         "na na na na"
+                         "ar ar ar as"
+                         "fo fo fo fo";
+    position: relative;
+}
+
+header{
+    grid-area: he;
+    background-image: url(kepek/header_title_bg.png);
+    height: 220px;
+}
+.hatter {
+    position: fixed;
+    height: 100px;
+    opacity: 40%;
+    width: 100%;
+    background-color: rgb(5, 5, 175);
+}
+
+nav {
+    grid-area: na;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+
+}
+nav ul li a {
+
+    color: wheat;
+}
+.linkek {
+    margin: 10px;
+    
+}
+li{
+    display: inline-block;
+    list-style-type: none;
+    float:right;
+    margin-right: 10px;
+    
+}
+article{
+    grid-area: ar;
+}
+
+aside{
+    grid-area: as;
+}
+
+footer{
+    grid-area: fo;
+}
